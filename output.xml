@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231005 18:40:01.582" rpa="false" schemaversion="4">
+<suite id="s1" name="Oct Task 2" source="C:\Users\ChanikyaN-3227\PycharmProjects\October 2023\Oct Task 2.robot">
+<test id="s1-t1" name="Search Hotels" line="23">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://div[@data-testid='search-radio-button-wrap']//input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231005 18:40:01.832" level="INFO">Clicking element 'xpath://div[@data-testid='search-radio-button-wrap']//input'.</msg>
+<msg timestamp="20231005 18:40:01.832" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231005 18:40:01.832" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='downshift-1-input']</arg>
+<arg>bangalore</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[.='Bangalore, Karnataka, India']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[.='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@class='close']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://h4[.='TS Royal Grand - Attibele Hosur']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath:(//button[@data-testid='selectRoomBtn'])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//button[@data-testid='selectRoomBtn'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>id=confirm_check</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${element_visible}" == "True"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.832"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>id=confirm_check</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Clicked the element successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//label)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//button)[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@class='greyCross--big']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<var>${out}</var>
+<arg>xpath://div[contains(@class,'StatusDetailsstyles__StatusCont')]/h3</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<if>
+<branch type="IF" condition="${out}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Booking Done</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</kw>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</branch>
+<status status="NOT RUN" starttime="20231005 18:40:01.847" endtime="20231005 18:40:01.847"/>
+</if>
+<tag>search</tag>
+<status status="FAIL" starttime="20231005 18:40:01.832" endtime="20231005 18:40:01.847">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20231005 18:40:01.582" endtime="20231005 18:40:01.847"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">search</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Oct Task 2">Oct Task 2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
