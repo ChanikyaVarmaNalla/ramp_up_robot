@@ -24,12 +24,11 @@ Test Wynk Music
     END
 
     Click Element    xpath://a[.='Wynk Music']
-#    FOR    ${i}    IN RANGE    3
-#        ${a} =    Set Variable    0
-#        ${b} =    Set Variable    500
-#        Execute JavaScript    window.scrollTo(${a}, ${b})
-#        ${a} =    Evaluate    ${b}
-#        ${b} =    Evaluate    ${b} + 500
-#    END
-    Sleep    20
+    ${a} =    Set Variable    0
+    ${b} =    Set Variable    500
+    FOR    ${i}    IN RANGE    3
+        Execute JavaScript    window.scrollTo(${a}, ${b})
+        ${a} =    Evaluate    ${b}
+        ${b} =    Evaluate    ${b} + 500
+    END
 	Click Element    xpath://a[@title='Recently Played']
