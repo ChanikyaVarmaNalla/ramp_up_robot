@@ -27,5 +27,5 @@ Status Update
     Click Element    xpath://a[@aria-label='Home']
     Sleep    3
     Page Should Contain Element    xpath://span[contains(text(),'Your Story')]
-    Log To Console    ${\n}Successfully Updated Status
+    Log To Console    ${\n}Successfully Updated Status In Social Media
 
