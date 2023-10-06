@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231006 16:39:42.950" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Oct Task 6a" source="C:\Users\ChanikyaN-3227\PycharmProjects\October 2023\Oct Task 6a.robot">
+<test id="s1-s1-t1" name="Test Case 1.1" line="5">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1.1 executed in Test Script 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231006 16:39:42.985" endtime="20231006 16:39:42.985"/>
+</kw>
+<status status="PASS" starttime="20231006 16:39:42.985" endtime="20231006 16:39:42.985"/>
+</test>
+<test id="s1-s1-t2" name="Test Case 1.2" line="8">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test Case 1.2 executed in Test Script 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231006 16:39:42.990" endtime="20231006 16:39:42.990"/>
+</kw>
+<status status="PASS" starttime="20231006 16:39:42.990" endtime="20231006 16:39:42.990"/>
+</test>
+<doc>Test script 1</doc>
+<status status="PASS" starttime="20231006 16:39:42.980" endtime="20231006 16:39:42.990"/>
+</suite>
+<status status="PASS" starttime="20231006 16:39:42.965" endtime="20231006 16:39:42.990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Oct Task 6a">Suites.Oct Task 6a</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
