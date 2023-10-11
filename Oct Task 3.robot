@@ -28,4 +28,3 @@ Status Update
     Sleep    3
     Page Should Contain Element    xpath://span[contains(text(),'Your Story')]
     Log To Console    ${\n}Successfully Updated Status In Social Media
-
