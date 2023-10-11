@@ -5,7 +5,7 @@ Library    Collections
 *** Test Cases ***
 Status Update
 	[Tags]    status
-	Open Browser    https://www.facebook.com/    chrome
+	Open Browser    https://www.facebook.com/    chrome    options=add_argument("--disable-notifications")
 	Maximize Browser Window
 	Input Text    id:email    nchanikyavarma04@gmail.com
 	Input Text    id:pass    Hiddenleaf@7
