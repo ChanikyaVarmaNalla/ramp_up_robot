@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231006 16:39:42.950" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20231011 15:32:54.904" rpa="false" schemaversion="4">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Oct Task 6b" source="C:\Users\ChanikyaN-3227\PycharmProjects\October 2023\Oct Task 6b.robot">
 <test id="s1-s1-t1" name="Test Case 2.1" line="5">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Test Case 2.1 executed in Test Script 2</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231006 16:39:42.985" endtime="20231006 16:39:42.985"/>
+<status status="PASS" starttime="20231011 15:32:54.934" endtime="20231011 15:32:54.934"/>
 </kw>
-<status status="PASS" starttime="20231006 16:39:42.985" endtime="20231006 16:39:42.985"/>
+<status status="PASS" starttime="20231011 15:32:54.934" endtime="20231011 15:32:54.935"/>
 </test>
 <test id="s1-s1-t2" name="Test Case 2.2" line="8">
 <kw name="Log To Console" library="BuiltIn">
 <arg>Test Case 2.2 executed in Test Script 2</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20231006 16:39:42.990" endtime="20231006 16:39:42.990"/>
+<status status="PASS" starttime="20231011 15:32:54.935" endtime="20231011 15:32:54.936"/>
 </kw>
-<status status="PASS" starttime="20231006 16:39:42.990" endtime="20231006 16:39:42.990"/>
+<status status="PASS" starttime="20231011 15:32:54.935" endtime="20231011 15:32:54.936"/>
 </test>
 <doc>Test script 2</doc>
-<status status="PASS" starttime="20231006 16:39:42.980" endtime="20231006 16:39:42.990"/>
+<status status="PASS" starttime="20231011 15:32:54.931" endtime="20231011 15:32:54.936"/>
 </suite>
-<status status="PASS" starttime="20231006 16:39:42.965" endtime="20231006 16:39:42.990"/>
+<status status="PASS" starttime="20231011 15:32:54.914" endtime="20231011 15:32:54.937"/>
 </suite>
 <statistics>
 <total>
