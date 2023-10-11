@@ -61,7 +61,3 @@ Flight Booking MakeMyTrip
 
     Page Should Contain Element    xpath://span[.='Your Booking']
     Log To Console    ${\n}Booking Done
-
-
-
-
