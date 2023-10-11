@@ -3,38 +3,28 @@ Library    SeleniumLibrary
 Library    Collections
 
 *** Test Cases ***
-Login
-	[Tags]    log
-	Open Browser    https://www.goibibo.com/hotels/    chrome
+Book Hotel
+	[Tags]    book
+	Open Browser    https://www.makemytrip.com/hotels/   chrome
 	Maximize Browser Window
-	Mouse Over    xpath://div[@class='login__tab_wrapper']
-	Sleep    3
-	Mouse Over    xpath://button[.='Login/Sign Up']
-	Sleep    3
-	Click Element    xpath://button[.='Login/Sign Up']
-	Sleep    3
-	Input Text    name:phone    9666079542
-	Sleep    20
-	Element Should Be Visible    xpath://span[contains(@class,'uname-truncated')]
-	Log To Console    Login Successful
+	Set Selenium Speed    2s
+	Click Element    xpath://span[@class='commonModal__close']
+	Click Element    id:hsw_search_button
+	Click Element    id:htl_id_seo_201809171729412453
 
-Search Hotels
-	[Tags]    search
-    Click Element    xpath://div[@data-testid='search-radio-button-wrap']//input
-    Input Text    xpath://input[@id='downshift-1-input']    bangalore
-    Sleep    3
-    Click Element    xpath://span[.='Bangalore, Karnataka, India']
-    Click Element    xpath://button[.='Search']
-    Sleep    5
-    Click Element    xpath://a[@class='close']
-    Sleep    3
-    Click Element    xpath:(//h4)[1]
-    Sleep    3
-    Switch Window    new
-    Scroll Element Into View    xpath:(//button[@data-testid='selectRoomBtn'])[1]
-    Click Element    xpath:(//button[@data-testid='selectRoomBtn'])[1]
-    Sleep    5
-    Click Element    xpath:(//button)[2]
-    Sleep    10
-    Element Should Be Visible    xpath://h2[contains(text(),'Pay')]
-    Log To Console    ${\n}Booking Done
+	Switch Window    new
+	Wait Until Element Is Visible    id:detpg_headerright_book_now    timeout=15
+	Click Element    id:detpg_headerright_book_now
+
+	Scroll Element Into View    xpath://a[.='+ Add Guest']
+	Input Text    id:fName    chanikya varma
+	Input Text    id:lName    nalla
+	Input Text    id:email    nchanikyavarma04@gmail.com
+	Input Text    id:mNo    8985873519
+	Scroll Element Into View    xpath://a[.='Pay Now']
+	Click Element    xpath://a[.='Pay Now']
+
+	Wait Until Element Is Visible    xpath://button[.='verify & pay']    timeout=10
+	Scroll Element Into View    xpath:(//span[@class='push-right rupees'])[3]
+	${price}    Get Text    xpath:(//span[@class='push-right rupees'])[3]
+	Log To Console    ${\n}Price of the Room: ${price}
