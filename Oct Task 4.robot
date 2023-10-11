@@ -5,7 +5,7 @@ Library    Collections
 *** Test Cases ***
 Flight Booking MakeMyTrip
 	[Tags]    makemytrip
-	Open Browser    https://www.makemytrip.com/    chrome
+	Open Browser    https://www.makemytrip.com/flights/    chrome
 	Maximize Browser Window
 	Set Selenium Speed    2s
     Click Element    xpath://span[@class='commonModal__close']
@@ -15,7 +15,7 @@ Flight Booking MakeMyTrip
     Click Element    xpath://label[@for='toCity']
     Input Text    xpath://input[@placeholder='To']    hyderabad
     Click Element    xpath://ul[@role='listbox']/li[1]
-    Click Element    xpath:(//div[@class="dateInnerCell"])[10]
+    Click Element    xpath:(//div[@class="dateInnerCell"])[14]
     Click Element    xpath://a[.='Search']
     Sleep    20
 
